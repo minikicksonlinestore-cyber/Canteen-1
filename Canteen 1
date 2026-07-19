@@ -1,0 +1,107 @@
+canteen-saas/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx          # Student login
+│   │   │   └── layout.tsx
+│   │   ├── (student)/
+│   │   │   ├── layout.tsx            # Student layout with nav
+│   │   │   ├── page.tsx              # Home/Menu
+│   │   │   ├── search/
+│   │   │   │   └── page.tsx          # Search page
+│   │   │   ├── cart/
+│   │   │   │   └── page.tsx          # Cart & Checkout
+│   │   │   ├── orders/
+│   │   │   │   └── page.tsx          # Order history
+│   │   │   ├── notifications/
+│   │   │   │   └── page.tsx
+│   │   │   └── profile/
+│   │   │       └── page.tsx
+│   │   ├── admin/
+│   │   │   ├── layout.tsx            # Admin layout
+│   │   │   ├── page.tsx              # Admin dashboard
+│   │   │   ├── menu/
+│   │   │   │   └── page.tsx          # Menu management
+│   │   │   ├── orders/
+│   │   │   │   └── page.tsx          # Order management
+│   │   │   ├── students/
+│   │   │   │   └── page.tsx          # Student management
+│   │   │   ├── reports/
+│   │   │   │   └── page.tsx          # Reports & analytics
+│   │   │   └── settings/
+│   │   │       └── page.tsx          # System settings
+│   │   ├── api/
+│   │   │   ├── orders/
+│   │   │   │   ├── route.ts
+│   │   │   │   └── [id]/
+│   │   │   │       └── route.ts
+│   │   │   ├── menu/
+│   │   │   │   └── route.ts
+│   │   │   └── payments/
+│   │   │       └── route.ts
+│   │   ├── layout.tsx                # Root layout
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── ui/                       # Reusable UI components
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   ├── toast.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   └── separator.tsx
+│   │   ├── student/
+│   │   │   ├── food-card.tsx
+│   │   │   ├── category-pill.tsx
+│   │   │   ├── cart-drawer.tsx
+│   │   │   ├── order-card.tsx
+│   │   │   ├── qr-display.tsx
+│   │   │   ├── search-bar.tsx
+│   │   │   ├── bottom-nav.tsx
+│   │   │   └── theme-toggle.tsx
+│   │   └── admin/
+│   │       ├── sidebar.tsx
+│   │       ├── stat-card.tsx
+│   │       ├── order-table.tsx
+│   │       ├── menu-form.tsx
+│   │       ├── student-form.tsx
+│   │       ├── revenue-chart.tsx
+│   │       └── data-table.tsx
+│   ├── hooks/
+│   │   ├── use-auth.ts
+│   │   ├── use-cart.ts
+│   │   ├── use-orders.ts
+│   │   ├── use-menu.ts
+│   │   ├── use-notifications.ts
+│   │   └── use-theme.ts
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   ├── constants.ts
+│   │   ├── razorpay.ts
+│   │   └── supabase/
+│   │       ├── client.ts
+│   │       ├── server.ts
+│   │       └── admin.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── middleware/
+│       └── route-guard.ts
+├── supabase/
+│   └── migrations/
+│       └── 001_initial_schema.sql
+├── public/
+│   └── images/
+├── package.json
+├── tsconfig.json
+├── next.config.js
+├── tailwind.config.ts
+├── postcss.config.js
+├── .env.local.example
+└── .gitignore
